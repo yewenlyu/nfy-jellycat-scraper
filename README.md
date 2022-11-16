@@ -1,0 +1,1 @@
+# nfy-jellycat-scraper
