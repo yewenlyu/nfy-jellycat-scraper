@@ -33,7 +33,6 @@ export default class JellyCatScraper {
             return response.data;
         } catch (error) {
             console.log(`Error occurs when fetching data from ${productData.url}`);
-            console.log(error);
             throw error;
         }
     }
@@ -44,7 +43,7 @@ export default class JellyCatScraper {
         if (targetElement.length === 0) {
             throw new Error(`Could not find the target element when scraping ${productData.url}`);
         }
-        const available = targetElement.attr()['style'].includes("block");
+        const available = targetElement.attr()['style'].includes('block');
         console.log("%s: %s.", productData.productName, available ? "AVAILABLE" : "NOT AVAILABLE");
         return {
             ...productData,
