@@ -27,10 +27,8 @@ export const PRODUCT_CHECK_LIST: ProductCheckListItem[] = [
 export const PROXY_BASE_URL = "https://proxy.scrapeops.io/v1/";
 export const PROXY_API_KEY = "";
 
-// Log prefix
-export const INFO_TAG = "[INFO] ";
-export const DEBUG_TAG = "[DEBUG] ";
-export const ERROR_TAG = "[ERROR] ";
-
 // Selectors
 export const BUY_ME_BUTTON_SELECTOR = "#variant-grid-area > div.pl2-notnarrow > div.pt0-5 > div.container-cols > form.fieldwithbutton.mb > div:nth-child(1)";
+
+// Github
+export const REPOSITORY_URL = "https://github.com/yewenlyu/nfy-jellycat-scraper/";

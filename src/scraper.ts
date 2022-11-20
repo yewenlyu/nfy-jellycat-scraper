@@ -16,7 +16,9 @@ export default class JellyCatScraper {
         for (const productData of PRODUCT_CHECK_LIST) {
             const html = await this.loadProductDetailsPage(productData);
             const productAvailabilityData = this.extractAvailabilityInfo(html, productData);
-            resultList.push(productAvailabilityData);
+            if (productAvailabilityData.available) {
+                resultList.push(productAvailabilityData);
+            }
         }
         return resultList;
     }
@@ -32,7 +34,7 @@ export default class JellyCatScraper {
             });
             return response.data;
         } catch (error) {
-            console.log(`Error occurs when fetching data from ${productData.url}`);
+            console.error(`Error occurs when fetching data from ${productData.url}`);
             throw error;
         }
     }
