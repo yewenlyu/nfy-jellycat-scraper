@@ -40,7 +40,7 @@ export default class JellyCatScraper {
     private extractAvailabilityInfo = (html: string | Buffer, productData: ProductCheckListItem): ProductAvailabilityData => {
         const $ = cheerio.load(html);
         const targetElement = $(BUY_ME_BUTTON_SELECTOR);
-        if (targetElement.length === 0) {
+        if (targetElement.length === 0 || targetElement.attr()['style'] === undefined) {
             throw new Error(`Could not find the target element when scraping ${productData.url}`);
         }
         const available = targetElement.attr()['style'].includes('block');
