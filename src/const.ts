@@ -1,5 +1,5 @@
 // Configurations
-export type ProductName = "Amuseable Avocado Bag" | "Amuseable Happy Boiled Egg Bag" | "Amuseable Toast Bag";
+export type ProductName = "Amuseable Coffee-To-Go Bag" | "Amuseable Avocado Bag" | "Amuseable Happy Boiled Egg Bag" | "Amuseable Toast Bag";
 export interface ProductCheckListItem {
     productName: ProductName;
     url: string;
@@ -10,16 +10,12 @@ export interface ProductAvailabilityData extends ProductCheckListItem {
 
 export const PRODUCT_CHECK_LIST: ProductCheckListItem[] = [
     {
+        productName: "Amuseable Coffee-To-Go Bag",
+        url: "https://www.jellycat.com/us/amuseable-coffeetogo-bag-a4cofb/"
+    },
+    {
         productName: "Amuseable Avocado Bag",
         url: "https://www.jellycat.com/us/amuseable-avocado-bag-a4asb"
-    },
-    {
-        productName: "Amuseable Happy Boiled Egg Bag",
-        url: "https://www.jellycat.com/us/amuseable-happy-boiled-egg-bag-a4be"
-    },
-    {
-        productName: "Amuseable Toast Bag",
-        url: "https://www.jellycat.com/us/amuseable-toast-bag-a4tb"
     }
 ];
 

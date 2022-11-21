@@ -3,7 +3,6 @@ import { SNSClient, PublishCommand } from "@aws-sdk/client-sns";
 import { ProductAvailabilityData, REPOSITORY_URL } from "./const";
 import JellyCatScraper from "./scraper";
 
-
 export const lambdaHandler = async (event: ScheduledEvent, context: Context): Promise<any> => {
     console.log(`ENVIRONMENT VARIABLES: ${JSON.stringify(process.env, null, 2)}`)
     console.log(`Recieved Event: ${JSON.stringify(event, null, 2)}`);
