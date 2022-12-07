@@ -48,7 +48,7 @@ export type ProductName = "Amuseable Coffee-To-Go Bag" |
                           "Amuseable Avocado Bag" |
                           "Amuseable Happy Boiled Egg Bag" |
                           "Amuseable Toast Bag";
-// Add product Name here
+// Add product name here
 
 export const PRODUCT_CHECK_LIST: ProductCheckListItem[] = [
     {
@@ -59,6 +59,6 @@ export const PRODUCT_CHECK_LIST: ProductCheckListItem[] = [
         productName: "Amuseable Avocado Bag",
         url: "https://www.jellycat.com/us/amuseable-avocado-bag-a4asb"
     }
-    // Add productName & detail page url here
+    // Add product name & detail page URL here
 ];
 ```
