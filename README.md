@@ -8,7 +8,7 @@ An AWS based web scrapper:
 ## Requirements
 - [x] NodeJS >= 14
 - [x] Docker (Requirement for AWS CDK)
-- [x] An AWS account
+- [x] An AWS account or IAM User with programmatic access
 
 ## Usage
 
