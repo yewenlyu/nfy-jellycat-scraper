@@ -48,7 +48,7 @@ export type ProductName = "Amuseable Coffee-To-Go Bag" |
                           "Amuseable Avocado Bag" |
                           "Amuseable Happy Boiled Egg Bag" |
                           "Amuseable Toast Bag";
-// Add product name here
+                          // Add product name here
 
 export const PRODUCT_CHECK_LIST: ProductCheckListItem[] = [
     {
